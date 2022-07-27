@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Landing-Page</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Landing Page</h1>
+      <nav>Navigation Bar</nav>
+    </header>
+    <div class="topnav">
+      <a class="active" href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About Us</a>
+    </div>
+
+    <main>
+      <section>
+        <h2>Square 1: Relative Position</h2>
+        <div class="container"></div>
+      </section>
+
+      <section>
+        <h2>Square 2: Absolute Position</h2>
+        <div class="container absolute-container"></div>
+      </section>
+    </main>
+
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form action="some.js">
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your first name.."
+        />
+
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Your last name.."
+        />
+
+        <label for="email">Email Address</label>
+        <input
+          type="text"
+          id="email"
+          name="emailAdd"
+          placeholder="Your email.."
+        />
+
+        <label for="product">Product</label>
+        <select id="Product" name="Product">
+          <option value="Gold">Gold</option>
+          <option value="Silver">Silver</option>
+          <option value="Copper">Copper</option>
+        </select>
+
+        <label for="subject">Subject</label>
+        <textarea
+          id="subject"
+          name="subject"
+          placeholder="Please describe the issue with your order.."
+          style="height: 200px"
+        ></textarea>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <footer></footer>
+  </body>
+</html>
